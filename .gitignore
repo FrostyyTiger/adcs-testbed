@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+*.elf
+*.bin
+*.hex
+*.map
+
+# Slicer / CAD temp files
+*.gcode
+*.3mf.bak
+*.stl.bak
+~$*
+
+# OS / editor
+.DS_Store
+.vscode/
+*.swp
