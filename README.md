@@ -41,6 +41,8 @@ comparable to the entire base. Details in [ADR 005](docs/decisions/005-coupled-m
 | [`hardware/`](hardware/) | Schematics, wiring, power budget |
 
 Start with the [roadmap](docs/roadmap.md) and the [decision records](docs/decisions/).
+New to the terminology? The [glossary](docs/glossary.md) defines everything in plain
+English.
 
 ## License
 

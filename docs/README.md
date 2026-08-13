@@ -1,5 +1,7 @@
 # Documentation
 
+- [`glossary.md`](glossary.md) — plain-English definitions of every term used here.
+  Start here if the vocabulary is unfamiliar
 - [`roadmap.md`](roadmap.md) — phases, exit criteria, standing risks
 - [`decisions/`](decisions/) — architecture decision records: one file per significant
   design choice, with the options considered and the rationale
