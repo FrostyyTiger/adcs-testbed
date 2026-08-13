@@ -1,7 +1,14 @@
 # 003: Reaction wheel drive — gimbal BLDC + FOC with position encoders
 
 **Date:** 2026-08-11
-**Status:** accepted
+**Status:** accepted; **sizing revised 2026-08-13 by [ADR 005](005-coupled-manipulator-scope.md)**
+
+> **Sizing note.** Wheel momentum capacity is now set by the *arm's* reaction momentum
+> rather than by base slew rate. Target inertia rose to ≥ 3×10⁻⁵ kg·m², roughly 2.5× the
+> figure implied below, achieved through larger rim radius and steel dowel ballast. The
+> drive architecture — gimbal BLDC, FOC, torque mode — is unchanged and matters more than
+> ever, since the wheel must now absorb transient arm reactions rather than merely slew a
+> passive base.
 
 ## Context
 

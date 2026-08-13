@@ -1,7 +1,13 @@
 # 001: Single-axis first, designed for 3-axis expansion
 
 **Date:** 2026-08-11
-**Status:** accepted
+**Status:** accepted; **reframed 2026-08-13 by [ADR 005](005-coupled-manipulator-scope.md)**
+
+> **Reframing note.** Single-axis is no longer a stepping stone toward a three-axis cube —
+> it is the permanent base configuration of the coupled manipulator testbed, and it is now
+> *required* rather than merely convenient: a 3-DOF arm on a three-axis base has an empty
+> reaction null space. The reasoning below still stands; only the destination changed.
+> Three-axis operation moved to phase 3.
 
 ## Context
 
