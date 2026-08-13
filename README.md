@@ -2,6 +2,8 @@
 
 A 1U-scale spacecraft attitude control platform with a mounted 3-DOF planar manipulator, built to study the disturbance coupling between arm motion and base attitude that governs on-orbit servicing and debris capture. The base carries a reaction wheel driven by a brushless motor under field-oriented control, estimates its attitude from a 9-DOF IMU and magnetometer through a complementary filter, and rotates freely on a low-friction yaw bearing to approximate free-floating dynamics in the rotational axis. Moving the arm imparts a reaction torque on the base, so the control problem is not attitude hold in isolation but the joint problem of planning arm trajectories and wheel commands together. The system implements two approaches for comparison: **feedforward momentum compensation**, where the wheel absorbs the predicted arm reaction torque, and **reaction null-space planning**, where joint trajectories are constrained to produce zero net angular momentum transfer to the base. Performance is characterised by pointing error during commanded arm slews, wheel momentum accumulation across a manoeuvre sequence, and the saturation margin remaining after repeated operations. Hardware is 3D printed in PETG with off-the-shelf actuators; firmware, CAD, and analysis tooling are open source.
 
+![General arrangement of the testbed: elevation, plan, and the momentum-exchange mechanism](docs/figures/general-arrangement.svg)
+
 ## Status
 
 🚧 **Design phase.** Architecture and component selection are settled (see

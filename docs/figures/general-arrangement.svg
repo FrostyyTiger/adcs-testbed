@@ -1,0 +1,316 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 1010" width="1240" height="1010"
+     font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace"
+     role="img" aria-label="General arrangement drawing of the coupled attitude and manipulator testbed. View A elevation: a levelled base plate supports a post containing two 608 bearings, on which a 1U cube rotates about a vertical yaw axis; inside the cube a flat reaction wheel spins about that same axis driven by a brushless motor, with an isolated IMU and electronics, and a three-joint arm on the top face. View B plan: all three arm joints rotate about vertical axes so the arm sweeps horizontally, with two different poses reaching the same hand position. View C: a three-step sequence showing that arm motion swings the base unless the reaction wheel absorbs the momentum.">
+
+  <rect x="0" y="0" width="1240" height="1010" fill="#F6F7F8"/>
+  <rect x="14" y="14" width="1212" height="982" fill="none" stroke="#C3CBD2" stroke-width="1.5"/>
+
+  <!-- ============================ HEADER ============================ -->
+  <text x="40" y="60" fill="#1B222A" font-size="23" font-weight="700" letter-spacing="0.2">COUPLED ATTITUDE &amp; MANIPULATOR TESTBED</text>
+  <text x="40" y="82" fill="#5E6873" font-size="11.5" letter-spacing="2.2">GENERAL ARRANGEMENT · CONCEPT · NOT TO SCALE</text>
+  <line x1="14" y1="98" x2="1226" y2="98" stroke="#C3CBD2" stroke-width="1"/>
+
+  <defs>
+    <pattern id="hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line x1="0" y1="0" x2="0" y2="7" stroke="#C3CBD2" stroke-width="1.1"/>
+    </pattern>
+    <marker id="aAct" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M0,0.8 L9.5,5 L0,9.2 Z" fill="#A8412A"/>
+    </marker>
+    <marker id="aInk" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0,0.8 L9.5,5 L0,9.2 Z" fill="#5E6873"/>
+    </marker>
+    <g id="cubeBody">
+      <rect x="55" y="55" width="130" height="130" fill="#FFFFFF" stroke="#1B222A" stroke-width="2.4"/>
+      <polygon points="112,55 128,55 120,43" fill="#1B222A" stroke="none"/>
+    </g>
+    <g id="armBody">
+      <polyline points="120,120 180,80 220,100 240,120" fill="none" stroke="#1B222A" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="120" cy="120" r="8" fill="#FFFFFF" stroke="#1B222A" stroke-width="1.6"/>
+      <circle cx="180" cy="80"  r="7" fill="#FFFFFF" stroke="#1B222A" stroke-width="1.6"/>
+      <circle cx="220" cy="100" r="7" fill="#FFFFFF" stroke="#1B222A" stroke-width="1.6"/>
+    </g>
+  </defs>
+
+  <!-- ============================ VIEW A ============================ -->
+  <g transform="translate(30,120)">
+    <text x="0" y="0" fill="#1B222A" font-size="12" font-weight="700" letter-spacing="1.6">A · ELEVATION</text>
+    <text x="400" y="0" text-anchor="end" fill="#5E6873" font-size="10.5" letter-spacing="1.2">SEEN FROM THE SIDE</text>
+
+    <g transform="translate(0,20)">
+      <line x1="200" y1="112" x2="200" y2="436" stroke="#5E6873" stroke-width="0.9" stroke-dasharray="14 4 2 4"/>
+      <text x="206" y="124" fill="#5E6873" font-size="9.5" letter-spacing="0.7">YAW AXIS · Z</text>
+
+      <rect x="58" y="386" width="284" height="16" fill="url(#hatch)" stroke="#1B222A" stroke-width="1.6"/>
+      <g fill="#FFFFFF" stroke="#5E6873" stroke-width="1.1">
+        <rect x="76" y="402" width="22" height="9"/>
+        <rect x="189" y="402" width="22" height="9"/>
+        <rect x="302" y="402" width="22" height="9"/>
+      </g>
+      <text x="200" y="428" text-anchor="middle" fill="#5E6873" font-size="9.5" letter-spacing="0.7">LEVELLED BASE PLATE</text>
+
+      <rect x="180" y="330" width="40" height="56" fill="#FFFFFF" stroke="#1B222A" stroke-width="1.6"/>
+      <g fill="#FFFFFF" stroke="#5E6873" stroke-width="1.1">
+        <rect x="181" y="338" width="9" height="15"/>
+        <rect x="210" y="338" width="9" height="15"/>
+        <rect x="181" y="362" width="9" height="15"/>
+        <rect x="210" y="362" width="9" height="15"/>
+      </g>
+
+      <path d="M132 318 A 68 15 0 0 0 268 318" fill="none" stroke="#A8412A" stroke-width="2.1" stroke-linecap="round" marker-end="url(#aAct)"/>
+      <text x="200" y="311" text-anchor="middle" fill="#A8412A" font-size="10" font-weight="600" letter-spacing="0.7">FREE TO ROTATE</text>
+
+      <rect x="125" y="175" width="150" height="155" fill="#FFFFFF" stroke="#1B222A" stroke-width="2.4"/>
+
+      <rect x="140" y="249" width="120" height="11" rx="2" fill="#A8412A" stroke="#1B222A" stroke-width="1.6"/>
+      <rect x="186" y="260" width="28" height="26" fill="#FFFFFF" stroke="#1B222A" stroke-width="1.6"/>
+      <text x="200" y="278" text-anchor="middle" fill="#1B222A" font-size="11" letter-spacing="0.7">M</text>
+
+      <g transform="translate(200,232)">
+        <circle r="8" fill="#FFFFFF" stroke="#5E6873" stroke-width="1.1"/>
+        <path d="M0,0 L0,-8 A8,8 0 0,1 8,0 Z" fill="#5E6873" stroke="none"/>
+        <path d="M0,0 L0,8 A8,8 0 0,1 -8,0 Z" fill="#5E6873" stroke="none"/>
+      </g>
+      <line x1="209" y1="232" x2="268" y2="232" stroke="#C3CBD2" stroke-width="1"/>
+      <text x="272" y="235" fill="#5E6873" font-size="9.5" letter-spacing="0.7">CoM — ON AXIS</text>
+
+      <rect x="145" y="197" width="44" height="15" rx="1" fill="#0F6B74" stroke="#1B222A" stroke-width="1.6"/>
+      <g fill="none" stroke="#5E6873" stroke-width="1.1" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M152 212 l0 5 l-4 2 l8 3 l-8 3 l6 2"/>
+        <path d="M182 212 l0 5 l-4 2 l8 3 l-8 3 l6 2"/>
+      </g>
+
+      <g fill="#FFFFFF" stroke="#5E6873" stroke-width="1.1">
+        <rect x="213" y="197" width="50" height="15"/>
+        <rect x="145" y="298" width="62" height="22"/>
+      </g>
+
+      <g fill="#FFFFFF" stroke="#1B222A" stroke-width="1.6">
+        <rect x="189" y="163" width="22" height="12"/>
+        <rect x="200" y="150" width="130" height="11" rx="4"/>
+        <circle cx="201" cy="155.5" r="8"/>
+        <circle cx="256" cy="155.5" r="8"/>
+        <circle cx="301" cy="155.5" r="8"/>
+      </g>
+      <line x1="330" y1="149" x2="330" y2="162" stroke="#1B222A" stroke-width="1.6" stroke-linecap="round"/>
+      <text x="266" y="140" text-anchor="middle" fill="#5E6873" font-size="9.5" letter-spacing="0.7">ARM LIES FLAT — SWEEPS IN &amp; OUT OF PAGE</text>
+
+      <g stroke="#C3CBD2" stroke-width="1">
+        <line x1="104" y1="175" x2="120" y2="175"/>
+        <line x1="104" y1="330" x2="120" y2="330"/>
+      </g>
+      <line x1="112" y1="175" x2="112" y2="330" stroke="#5E6873" stroke-width="1.1" marker-start="url(#aInk)" marker-end="url(#aInk)"/>
+      <text x="107" y="256" text-anchor="middle" fill="#5E6873" font-size="10" letter-spacing="0.7" transform="rotate(-90 107 256)">100 mm · 1U</text>
+
+      <g fill="#FFFFFF" stroke="#5E6873" stroke-width="1.1">
+        <circle cx="86" cy="182" r="10"/><circle cx="86" cy="205" r="10"/><circle cx="86" cy="255" r="10"/><circle cx="86" cy="357" r="10"/>
+        <circle cx="356" cy="140" r="10"/><circle cx="356" cy="204" r="10"/><circle cx="356" cy="273" r="10"/><circle cx="356" cy="394" r="10"/>
+      </g>
+      <g fill="#1B222A" font-size="11" font-weight="700" text-anchor="middle" stroke="none">
+        <text x="86" y="186">2</text><text x="86" y="209">5</text><text x="86" y="259">3</text><text x="86" y="361">7</text>
+        <text x="356" y="144">1</text><text x="356" y="208">6</text><text x="356" y="277">4</text><text x="356" y="398">8</text>
+      </g>
+      <g stroke="#C3CBD2" stroke-width="1">
+        <line x1="96" y1="182" x2="125" y2="180"/>
+        <line x1="96" y1="205" x2="145" y2="205"/>
+        <line x1="96" y1="255" x2="140" y2="255"/>
+        <line x1="96" y1="357" x2="181" y2="357"/>
+        <line x1="346" y1="142" x2="330" y2="152"/>
+        <line x1="346" y1="204" x2="263" y2="204"/>
+        <line x1="346" y1="273" x2="214" y2="273"/>
+        <line x1="346" y1="394" x2="342" y2="394"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================ VIEW B ============================ -->
+  <g transform="translate(455,120)">
+    <text x="0" y="0" fill="#1B222A" font-size="12" font-weight="700" letter-spacing="1.6">B · PLAN</text>
+    <text x="400" y="0" text-anchor="end" fill="#5E6873" font-size="10.5" letter-spacing="1.2">SEEN FROM ABOVE</text>
+
+    <g transform="translate(0,20)">
+      <rect x="95" y="180" width="140" height="140" fill="#FFFFFF" stroke="#1B222A" stroke-width="2.4"/>
+      <text x="105" y="200" fill="#5E6873" font-size="9.5" letter-spacing="0.7">CUBE (TOP FACE)</text>
+
+      <circle cx="165" cy="250" r="52" fill="none" stroke="#5E6873" stroke-width="1.1" stroke-dasharray="4 3"/>
+      <text x="165" y="309" text-anchor="middle" fill="#5E6873" font-size="9.5" letter-spacing="0.7">WHEEL BELOW</text>
+
+      <g fill="none" stroke="#5E6873" stroke-width="1.4" stroke-dasharray="5 4" stroke-linejoin="round" stroke-linecap="round">
+        <polyline points="165,250 240,303 300,285 320,260"/>
+        <circle cx="240" cy="303" r="6"/>
+        <circle cx="300" cy="285" r="6"/>
+      </g>
+      <text x="250" y="332" fill="#5E6873" font-size="9.5" letter-spacing="0.7">SAME HAND · OTHER POSE</text>
+
+      <polyline points="165,250 245,205 300,235 320,260" fill="none" stroke="#1B222A" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+      <g fill="#FFFFFF" stroke="#1B222A" stroke-width="1.6">
+        <circle cx="165" cy="250" r="9"/>
+        <circle cx="245" cy="205" r="8"/>
+        <circle cx="300" cy="235" r="8"/>
+      </g>
+      <g fill="#5E6873" font-size="9.5" letter-spacing="0.7">
+        <text x="152" y="238" text-anchor="end">J1</text>
+        <text x="245" y="194" text-anchor="middle">J2</text>
+        <text x="303" y="224" text-anchor="middle">J3</text>
+      </g>
+
+      <g stroke="#A8412A" stroke-width="2.1" stroke-linecap="round">
+        <line x1="312" y1="260" x2="328" y2="260"/>
+        <line x1="320" y1="252" x2="320" y2="268"/>
+      </g>
+      <text x="332" y="253" fill="#A8412A" font-size="10" font-weight="600" letter-spacing="0.7">HAND</text>
+
+      <circle cx="165" cy="250" r="9" fill="#FFFFFF" stroke="#5E6873" stroke-width="1.1"/>
+      <circle cx="165" cy="250" r="2.6" fill="#5E6873" stroke="none"/>
+
+      <path d="M165 194 A 56 56 0 0 1 214 222" fill="none" stroke="#A8412A" stroke-width="2.1" stroke-linecap="round" marker-end="url(#aAct)"/>
+      <text x="176" y="186" fill="#A8412A" font-size="10" font-weight="600" letter-spacing="0.7">JOINTS SWEEP</text>
+
+      <g stroke="#C3CBD2" stroke-width="1">
+        <line x1="165" y1="250" x2="165" y2="368"/>
+        <line x1="320" y1="260" x2="320" y2="368"/>
+      </g>
+      <line x1="165" y1="360" x2="320" y2="360" stroke="#5E6873" stroke-width="1.1" marker-start="url(#aInk)" marker-end="url(#aInk)"/>
+      <text x="243" y="352" text-anchor="middle" fill="#5E6873" font-size="10" letter-spacing="0.7">≈150 mm REACH</text>
+
+      <g fill="#5E6873" font-size="9.5" letter-spacing="0.7" text-anchor="middle">
+        <text x="200" y="398">ALL THREE JOINTS ROTATE ABOUT VERTICAL AXES</text>
+        <text x="200" y="414">NOTHING LIFTS — GRAVITY NEVER LOADS A JOINT</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================ PARTS LIST ============================ -->
+  <g transform="translate(885,120)">
+    <text x="0" y="0" fill="#1B222A" font-size="12" font-weight="700" letter-spacing="1.6">PARTS LIST</text>
+    <text x="313" y="0" text-anchor="end" fill="#5E6873" font-size="10.5" letter-spacing="1.2">KEYED TO VIEW A</text>
+    <rect x="0" y="14" width="313" height="454" fill="#FFFFFF" stroke="#C3CBD2" stroke-width="1"/>
+
+    <g font-size="11.5" letter-spacing="0.4">
+      <g fill="#1B222A" font-weight="700">
+        <text x="16" y="46">1</text><text x="16" y="102">2</text><text x="16" y="158">3</text><text x="16" y="214">4</text>
+        <text x="16" y="270">5</text><text x="16" y="326">6</text><text x="16" y="382">7</text><text x="16" y="438">8</text>
+      </g>
+      <g fill="#1B222A" font-weight="600">
+        <text x="40" y="46">MANIPULATOR, 3 DOF PLANAR</text>
+        <text x="40" y="102">1U CUBE STRUCTURE</text>
+        <text x="40" y="158">REACTION WHEEL</text>
+        <text x="40" y="214">GIMBAL BLDC + FOC DRIVER</text>
+        <text x="40" y="270">IMU ON ISOLATION MOUNT</text>
+        <text x="40" y="326">FLIGHT COMPUTER + BATTERY</text>
+        <text x="40" y="382">YAW BEARING</text>
+        <text x="40" y="438">BASE PLATE + LEVELLING FEET</text>
+      </g>
+      <g fill="#5E6873" font-size="10">
+        <text x="40" y="62">Three smart servos, vertical axes</text>
+        <text x="40" y="118">Printed PETG, 100 mm, removable panels</text>
+        <text x="40" y="174">Printed disc, steel dowel ballast at rim</text>
+        <text x="40" y="230">Torque mode, magnetic shaft encoder</text>
+        <text x="40" y="286">Gyro + accel + magnetometer — a sensor,</text>
+        <text x="40" y="299">not a spinning part</text>
+        <text x="40" y="342">STM32 G474; ESP32 telemetry bridge</text>
+        <text x="40" y="398">608ZZ pair — the only axis that moves</text>
+        <text x="40" y="454">Level, or gravity biases every run</text>
+      </g>
+      <g stroke="#C3CBD2" stroke-width="1">
+        <line x1="0" y1="76" x2="313" y2="76"/>
+        <line x1="0" y1="132" x2="313" y2="132"/>
+        <line x1="0" y1="188" x2="313" y2="188"/>
+        <line x1="0" y1="244" x2="313" y2="244"/>
+        <line x1="0" y1="308" x2="313" y2="308"/>
+        <line x1="0" y1="356" x2="313" y2="356"/>
+        <line x1="0" y1="412" x2="313" y2="412"/>
+      </g>
+    </g>
+  </g>
+
+  <line x1="14" y1="608" x2="1226" y2="608" stroke="#C3CBD2" stroke-width="1"/>
+
+  <!-- ============================ VIEW C ============================ -->
+  <g transform="translate(30,632)">
+    <text x="0" y="0" fill="#1B222A" font-size="12" font-weight="700" letter-spacing="1.6">C · MECHANISM</text>
+    <text x="840" y="0" text-anchor="end" fill="#5E6873" font-size="10.5" letter-spacing="1.2">WHY THE WHEEL IS THERE · TOP VIEW SEQUENCE</text>
+
+    <g transform="translate(0,20)">
+      <!-- step 1 -->
+      <g>
+        <use href="#cubeBody"/>
+        <circle cx="120" cy="120" r="42" fill="none" stroke="#5E6873" stroke-width="1.1" stroke-dasharray="4 3"/>
+        <use href="#armBody"/>
+        <text x="120" y="222" text-anchor="middle" fill="#1B222A" font-size="12" font-weight="700" letter-spacing="0.7">1 · AT REST</text>
+        <text x="120" y="240" text-anchor="middle" fill="#5E6873" font-size="9.5" letter-spacing="0.7">HEADING HELD · WHEEL STILL</text>
+        <line x1="30" y1="252" x2="210" y2="252" stroke="#C3CBD2" stroke-width="1"/>
+        <text x="120" y="268" text-anchor="middle" fill="#5E6873" font-size="9.5" letter-spacing="0.7">ARM 0 · BASE 0 · WHEEL 0</text>
+      </g>
+
+      <!-- step 2 -->
+      <g transform="translate(290,0)">
+        <g transform="rotate(-18 120 120)"><use href="#cubeBody"/></g>
+        <circle cx="120" cy="120" r="42" fill="none" stroke="#5E6873" stroke-width="1.1" stroke-dasharray="4 3"/>
+        <g transform="rotate(27 120 120)"><use href="#armBody"/></g>
+        <path d="M168 46 A 74 74 0 0 1 206 104" fill="none" stroke="#A8412A" stroke-width="2.1" stroke-linecap="round" marker-end="url(#aAct)"/>
+        <text x="196" y="40" text-anchor="middle" fill="#A8412A" font-size="10" font-weight="600" letter-spacing="0.7">ARM SLEWS</text>
+        <path d="M64 176 A 74 74 0 0 0 40 116" fill="none" stroke="#5E6873" stroke-width="1.1" stroke-linecap="round" marker-end="url(#aInk)"/>
+        <text x="16" y="196" fill="#5E6873" font-size="9.5" letter-spacing="0.7">BASE SWINGS BACK</text>
+        <text x="120" y="222" text-anchor="middle" fill="#1B222A" font-size="12" font-weight="700" letter-spacing="0.7">2 · UNCOMPENSATED</text>
+        <text x="120" y="240" text-anchor="middle" fill="#5E6873" font-size="9.5" letter-spacing="0.7">POINTING LOST — 22° TO 66°</text>
+        <line x1="30" y1="252" x2="210" y2="252" stroke="#C3CBD2" stroke-width="1"/>
+        <text x="120" y="268" text-anchor="middle" fill="#5E6873" font-size="9.5" letter-spacing="0.7">ARM +h · BASE −h · WHEEL 0</text>
+      </g>
+
+      <!-- step 3 -->
+      <g transform="translate(580,0)">
+        <use href="#cubeBody"/>
+        <circle cx="120" cy="120" r="42" fill="none" stroke="#A8412A" stroke-width="2.1" stroke-dasharray="5 4"/>
+        <path d="M82 100 A 42 42 0 0 0 86 148" fill="none" stroke="#A8412A" stroke-width="2.1" stroke-linecap="round" marker-end="url(#aAct)"/>
+        <g transform="rotate(45 120 120)"><use href="#armBody"/></g>
+        <path d="M168 46 A 74 74 0 0 1 206 104" fill="none" stroke="#A8412A" stroke-width="2.1" stroke-linecap="round" marker-end="url(#aAct)"/>
+        <text x="196" y="40" text-anchor="middle" fill="#A8412A" font-size="10" font-weight="600" letter-spacing="0.7">ARM SLEWS</text>
+        <text x="44" y="118" text-anchor="middle" fill="#A8412A" font-size="10" font-weight="600" letter-spacing="0.7">WHEEL SPINS</text>
+        <text x="44" y="130" text-anchor="middle" fill="#A8412A" font-size="10" font-weight="600" letter-spacing="0.7">THE OTHER WAY</text>
+        <text x="120" y="222" text-anchor="middle" fill="#1B222A" font-size="12" font-weight="700" letter-spacing="0.7">3 · COMPENSATED</text>
+        <text x="120" y="240" text-anchor="middle" fill="#5E6873" font-size="9.5" letter-spacing="0.7">HEADING HELD — WHEEL PAYS</text>
+        <line x1="30" y1="252" x2="210" y2="252" stroke="#C3CBD2" stroke-width="1"/>
+        <text x="120" y="268" text-anchor="middle" fill="#5E6873" font-size="9.5" letter-spacing="0.7">ARM +h · BASE 0 · WHEEL −h</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================ LEGEND + TITLE BLOCK ============================ -->
+  <g transform="translate(885,632)">
+    <text x="0" y="0" fill="#1B222A" font-size="12" font-weight="700" letter-spacing="1.6">TITLE BLOCK</text>
+    <rect x="0" y="14" width="313" height="286" fill="#FFFFFF" stroke="#C3CBD2" stroke-width="1"/>
+
+    <g font-size="11" letter-spacing="0.5">
+      <g fill="#5E6873">
+        <text x="16" y="44">PROJECT</text><text x="16" y="80">DRAWING</text><text x="16" y="116">VIEWS</text>
+        <text x="16" y="152">SCALE</text><text x="16" y="188">STATUS</text><text x="16" y="224">BASIS</text><text x="16" y="260">DATE</text>
+      </g>
+      <g fill="#1B222A" font-weight="600">
+        <text x="120" y="44">adcs-testbed</text>
+        <text x="120" y="80">General arrangement</text>
+        <text x="120" y="116">A elev · B plan · C mech</text>
+        <text x="120" y="152">NOT TO SCALE</text>
+        <text x="120" y="188">Concept — pre-CAD</text>
+        <text x="120" y="224">ADR 005 · ADR 007</text>
+        <text x="120" y="260">2026-08-13</text>
+      </g>
+      <g stroke="#C3CBD2" stroke-width="1">
+        <line x1="0" y1="58" x2="313" y2="58"/><line x1="0" y1="94" x2="313" y2="94"/><line x1="0" y1="130" x2="313" y2="130"/>
+        <line x1="0" y1="166" x2="313" y2="166"/><line x1="0" y1="202" x2="313" y2="202"/><line x1="0" y1="238" x2="313" y2="238"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================ FOOTER LEGEND ============================ -->
+  <line x1="14" y1="950" x2="1226" y2="950" stroke="#C3CBD2" stroke-width="1"/>
+  <g transform="translate(40,974)">
+    <line x1="0" y1="-4" x2="26" y2="-4" stroke="#A8412A" stroke-width="2.4"/>
+    <text x="36" y="0" fill="#5E6873" font-size="10.5" letter-spacing="1.1">MOTION &amp; TORQUE</text>
+    <line x1="196" y1="-4" x2="222" y2="-4" stroke="#0F6B74" stroke-width="2.4"/>
+    <text x="232" y="0" fill="#5E6873" font-size="10.5" letter-spacing="1.1">SENSING</text>
+    <line x1="330" y1="-4" x2="356" y2="-4" stroke="#5E6873" stroke-width="1.6" stroke-dasharray="5 4"/>
+    <text x="366" y="0" fill="#5E6873" font-size="10.5" letter-spacing="1.1">HIDDEN / ALTERNATIVE POSE</text>
+  </g>
+  <text x="1200" y="974" text-anchor="end" fill="#5E6873" font-size="10.5" letter-spacing="1.1">github.com/FrostyyTiger/adcs-testbed · MIT</text>
+</svg>

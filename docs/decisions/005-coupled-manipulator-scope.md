@@ -21,6 +21,16 @@ The intended study compares two established approaches on identical hardware:
 
 Against an uncompensated baseline (arm slews, wheel idle).
 
+## Arrangement
+
+![General arrangement: elevation, plan, and the momentum-exchange mechanism](../figures/general-arrangement.svg)
+
+The reaction wheel lies flat and spins about the same vertical axis the cube turns on; all
+three arm joints rotate about vertical axes so the arm sweeps in the horizontal plane and
+gravity never loads a joint. View C states the whole mechanism as a momentum ledger:
+angular momentum about the pivot sums to zero, so the only question is which body carries
+it.
+
 ## The constraint that sets the configuration
 
 For a free-floating base with zero initial angular momentum, joint rates couple to base

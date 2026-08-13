@@ -6,6 +6,7 @@
 - [`decisions/`](decisions/) — architecture decision records: one file per significant
   design choice, with the options considered and the rationale
 - [`bom.md`](bom.md) — bill of materials with suppliers and estimated prices
+- [`figures/`](figures/) — drawings and diagrams referenced from the docs
 - `build-log/` — dated build log entries with photos (starts with phase 1)
 
 ## Decision records
