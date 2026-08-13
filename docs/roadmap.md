@@ -51,7 +51,7 @@ repeatable known disturbance, with logged plots.
 **Exit criterion:** a results section with real plots, simulation-vs-hardware agreement,
 and an honest account of where each approach wins and why.
 
-## Phase 3 — stretch goals (beyond the 400–800 CHF envelope)
+## Phase 3 — stretch goals (beyond the phase 1–2 build budget)
 
 - Planar air bearing (float pucks on a flat plate) to add translational freedom.
 - Three-axis base with a 4+ DOF arm — required for a non-trivial spatial null space.

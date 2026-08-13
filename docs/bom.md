@@ -49,11 +49,10 @@ phase 3 and deliberately out of budget.
 
 ## Projected total
 
-**≈ 515–670 CHF** for phases 1 and 2 including consumables — inside the 400–800 CHF
-envelope with roughly 130–285 CHF of headroom.
+**≈ 515–670 CHF** to build phases 1 and 2, including printing consumables.
 
-Deferred to phase 3 and explicitly outside this budget: planar air bearing, two additional
-reaction wheel assemblies, 4+ DOF arm, custom integration PCB.
+Deferred to phase 3 and not included above: planar air bearing, two additional reaction
+wheel assemblies, 4+ DOF arm, custom integration PCB.
 
 ## Optional / nice-to-have
 
